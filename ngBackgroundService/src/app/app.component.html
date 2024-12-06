@@ -28,7 +28,7 @@
     </div>
     <div *ngIf="isConnected">
 
-      <div >Connecté! <!-- TODO: Afficher le nb de wins--></div>
+      <div >Connecté! Vous avez eu <b>{{nbWins}}</b> victoires!</div>
       <br>
       <div>
         <button mat-raised-button color="primary" (click)="Increment()">Cliquer</button>
