@@ -20,6 +20,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//builder.Services.AddHostedService<Game>();
 builder.Services.AddSingleton<Game>();
 builder.Services.AddHostedService<Game>(p => p.GetService<Game>());
 
